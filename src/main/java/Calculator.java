@@ -1,3 +1,4 @@
+import java.io.PrintStream;
 import java.util.Scanner;
 /**@author Sergey*/
 
@@ -10,22 +11,22 @@ public class Calculator {
         String i = s.nextLine();
 
         System.out.println("Введите первое число");
-        int first = s.nextInt();
+        double first = s.nextInt();
 
         System.out.println("Введите второе число");
-        int second = s.nextInt();
+        double second = s.nextInt();
         switch (i) {
             case "Сложение":
-                System.out.println(first + second);
+                System.out.printf("%.4f",(first + second));
                 break;
             case "Вычитание":
-                System.out.println(first - second);
+                System.out.printf("%.4f",first - second);
                 break;
             case "Деление":
-                System.out.println(first / second);
+                System.out.printf("%.4f",(first /second));
                 break;
             case "Умножение":
-                System.out.println(first * second);
+                System.out.printf("%.4f",first * second);
                 break;
         }
     }
