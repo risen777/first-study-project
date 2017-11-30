@@ -18,8 +18,8 @@ public class Base {
         scanner.close();
 
     }
-public String someMethod(){
-return "string";
+private String someMethod(){
+return "string ";
 
 }
 
