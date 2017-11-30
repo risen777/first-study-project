@@ -19,7 +19,7 @@ public class Base {
 
     }
 private String someMethod(){
-return "string ";
+return "string";
 
 }
 
