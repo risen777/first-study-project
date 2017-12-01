@@ -1,5 +1,7 @@
 import java.util.Scanner;
-/**@author Sergey
+
+/**
+ * @author Sergey
  * @see #addition(double, double)
  * @see #division(double, double)
  * @see #multiplication(double, double)
@@ -24,7 +26,7 @@ public class CalculatorWithMetods {
             System.out.printf("%.4f", subtraction(first, second));
         } else if (choice.equals("Сложение")) {
             System.out.printf("%.4f", addition(first, second));
-        }else System.out.println("Вы где-то ошиблись или я");
+        } else System.out.println("Вы где-то ошиблись или я");
         scanner.close();
     }
 

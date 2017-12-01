@@ -1,5 +1,8 @@
 import java.util.Scanner;
-/**@author Sergey*/
+
+/**
+ * @author Sergey
+ */
 
 public class Calculator {
     public static void main(String[] args) {
@@ -16,16 +19,16 @@ public class Calculator {
         double second = s.nextInt();
         switch (i) {
             case "Сложение":
-                System.out.printf("%.4f",(first + second));
+                System.out.printf("%.4f", (first + second));
                 break;
             case "Вычитание":
-                System.out.printf("%.4f",first - second);
+                System.out.printf("%.4f", first - second);
                 break;
             case "Деление":
-                System.out.printf("%.4f",(first /second));
+                System.out.printf("%.4f", (first / second));
                 break;
             case "Умножение":
-                System.out.printf("%.4f",first * second);
+                System.out.printf("%.4f", first * second);
                 break;
 
         }
