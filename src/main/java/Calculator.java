@@ -30,7 +30,8 @@ public class Calculator {
             case "Умножение":
                 System.out.printf("%.4f", first * second);
                 break;
-
+default:
+    System.out.println("Вы где-то ошиблись или я");
         }
         s.close();
     }
