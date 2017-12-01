@@ -1,4 +1,3 @@
-import java.io.PrintStream;
 import java.util.Scanner;
 /**@author Sergey*/
 
@@ -28,7 +27,9 @@ public class Calculator {
             case "Умножение":
                 System.out.printf("%.4f",first * second);
                 break;
+
         }
+        s.close();
     }
 
 }
