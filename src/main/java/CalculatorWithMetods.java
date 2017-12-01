@@ -13,9 +13,9 @@ public class CalculatorWithMetods {
         Scanner scanner = new Scanner(System.in);
         String choice = scanner.nextLine();
         System.out.println("Введите первое число");
-        float first = scanner.nextInt();
+        float first = scanner.nextFloat();
         System.out.println("Введите второе число");
-        float second = scanner.nextInt();
+        float second = scanner.nextFloat();
 
         if (choice.equals("Деление")) {
             System.out.printf("%.4f", division(first, second));

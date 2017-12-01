@@ -13,10 +13,10 @@ public class Calculator {
         String i = s.nextLine();
 
         System.out.println("Введите первое число");
-        double first = s.nextInt();
+        double first = s.nextFloat();
 
         System.out.println("Введите второе число");
-        double second = s.nextInt();
+        double second = s.nextFloat();
         switch (i) {
             case "Сложение":
                 System.out.printf("%.4f", (first + second));
