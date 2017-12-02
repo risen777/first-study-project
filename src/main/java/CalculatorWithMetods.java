@@ -9,25 +9,34 @@ import java.util.Scanner;
  */
 public class CalculatorWithMetods {
     public static void main(String[] args) {
-        System.out.println("Введите операцию(Сложение/Вычитание/Деление/Умножение)");
-        Scanner scanner = new Scanner(System.in);
-        String choice = scanner.nextLine();
-        System.out.println("Введите первое число");
-        float first = scanner.nextFloat();
-        System.out.println("Введите второе число");
-        float second = scanner.nextFloat();
+        while (true) {
+            System.out.println("Введите операцию(Сложение/Вычитание/Деление/Умножение/Выход)");
+            Scanner scanner = new Scanner(System.in);
+            String choice = scanner.nextLine();
+            if (choice.equals("Выход")) {
 
-        if (choice.equals("Деление")) {
-            System.out.printf("%.4f", division(first, second));
-        } else if (choice.equals("Умножение")) {
+                System.exit(0);
+            }
+            System.out.println("Введите первое число");
+            float first = scanner.nextFloat();
+            System.out.println("Введите второе число");
+            float second = scanner.nextFloat();
 
-            System.out.printf("%.4f", multiplication(first, second));
-        } else if (choice.equals("Вычитание")) {
-            System.out.printf("%.4f", subtraction(first, second));
-        } else if (choice.equals("Сложение")) {
-            System.out.printf("%.4f", addition(first, second));
-        } else System.out.println("Вы где-то ошиблись или я");
-        scanner.close();
+            if (choice.equals("Деление")) {
+                System.out.printf("%.4f", division(first, second));
+            } else if (choice.equals("Умножение")) {
+
+                System.out.printf("%.4f", multiplication(first, second));
+            } else if (choice.equals("Вычитание")) {
+                System.out.printf("%.4f", subtraction(first, second));
+            } else if (choice.equals("Сложение")) {
+                System.out.printf("%.4f", addition(first, second));
+
+
+            } else System.out.println("Вы где-то ошиблись или я");
+            System.out.println();
+        }
+
     }
 
 
