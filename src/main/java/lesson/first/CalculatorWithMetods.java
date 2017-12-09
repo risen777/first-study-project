@@ -1,3 +1,5 @@
+package lesson.first;
+
 import java.util.Scanner;
 
 /**

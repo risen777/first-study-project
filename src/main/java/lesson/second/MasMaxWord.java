@@ -8,11 +8,12 @@ public class MasMaxWord {
     public static void main(String[] args) {
 
         Scanner scan = new Scanner(System.in);
-        String[] arr = new String[10];
+        int a=11;
+        String[] arr = new String[a];
         String value = "";
         int count = 0;
         String  max="";
-        System.out.println("Введите Сравнить кода зканчить ввод");
+        System.out.println("Введите до " +(a-1)+" слов ,а затем Сравнить" );
         do {
             System.out.println("Слово" + (count + 1) + ":");
             value = scan.nextLine();
@@ -21,7 +22,7 @@ public class MasMaxWord {
                 count++;
             }
         } while (!value.equalsIgnoreCase("Сравнить"));
-        System.out.println("Самое большое слово=");
+      //  System.out.println("Самое большое слово=");
 
         for(String word: arr)
         {
@@ -34,7 +35,7 @@ public class MasMaxWord {
 
 
         }
-        System.out.println(max);
+        System.out.println("Самое большое слово="+ max);
 
         }}
 

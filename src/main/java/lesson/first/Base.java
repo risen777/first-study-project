@@ -1,3 +1,5 @@
+package lesson.first;
+
 import java.util.Scanner;
 /**Created by Sergei on 29.11.17
  * @author Sergei

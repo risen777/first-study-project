@@ -1,3 +1,5 @@
+package lesson.second;
+
 import java.util.Scanner;
 
 /**
@@ -39,6 +41,9 @@ public class Calculator {
         s.close();
 
     }
-}
+
+    }
+
+
 
 
