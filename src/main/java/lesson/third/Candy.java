@@ -1,4 +1,7 @@
 package lesson.third;
+
+import java.util.Scanner;
+
 /**
  * @author Sergey
  * @see #Candy(String, int, int)
@@ -6,6 +9,8 @@ package lesson.third;
 public class Candy {
     private String name;
     private int weight, price;
+
+
     public Candy(String name,int weigh,int price){
 
     }
@@ -15,6 +20,7 @@ public class Candy {
     }
 
     public String getName() {
+
         return name;
     }
 
@@ -37,4 +43,6 @@ public class Candy {
     public void setPrice(int price) {
         this.price = price;
     }
+
+
 }
