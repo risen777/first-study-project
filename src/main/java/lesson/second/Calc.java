@@ -1,6 +1,13 @@
 package lesson.second;
 
 import java.util.Scanner;
+/**
+ * @author Sergey
+ * @see #addition(double, double)
+ * @see #division(double, double)
+ * @see #multiplication(double, double)
+ * @see #subtraction(double, double)
+ */
 
 public class Calc extends TwoChoice{
 

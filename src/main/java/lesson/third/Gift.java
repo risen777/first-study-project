@@ -1,5 +1,10 @@
 package lesson.third;
+/**
+ * @author Sergey
+ * @see #candy
+ * @see #jellybean
 
+ */
 public class Gift {
 static Candy candy=new Candy();
 static Jellybean jellybean=new Jellybean();

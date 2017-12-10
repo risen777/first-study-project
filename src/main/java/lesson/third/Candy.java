@@ -1,5 +1,8 @@
 package lesson.third;
-
+/**
+ * @author Sergey
+ * @see #Candy(String, int, int)
+ */
 public class Candy {
     private String name;
     private int weight, price;

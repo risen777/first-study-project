@@ -1,13 +1,15 @@
 package lesson.second;
 
 import java.util.Scanner;
-
+/**
+ * @author Sergey
+ */
 public class TwoChoice {
 
     public static void main(String[] args) {
 
 
-        System.out.println("dddd");
+        System.out.println("Введите 1 ,чтобы калькуляторить,2,чтобы разобраться со словами");
         Scanner s = new Scanner(System.in);
         int value = s.nextInt();
         Calc calc =new Calc();
@@ -72,7 +74,8 @@ public class TwoChoice {
 
                 }
                 System.out.println("Самое большое слово="+ max);
-
+scan.close();
+s.close();
         }}
 
 }

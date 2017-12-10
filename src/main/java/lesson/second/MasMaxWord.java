@@ -1,6 +1,9 @@
 package lesson.second;
 
 import java.util.Scanner;
+/**
+ * @author Sergey
+ */
 
 public class MasMaxWord {
 
@@ -36,6 +39,6 @@ public class MasMaxWord {
 
         }
         System.out.println("Самое большое слово="+ max);
-
+scan.close();
         }}
 

@@ -1,5 +1,8 @@
 package lesson.third;
-
+/**
+ * @author Sergey
+ * @see #Jellybean()
+ */
 public class Jellybean {
     private String name;
     private int weight, price;
