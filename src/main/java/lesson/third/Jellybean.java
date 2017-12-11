@@ -18,7 +18,7 @@ public class Jellybean {
         this.name = name;
     }
 
-    public int getWeight() {
+    public int getWeight(int weig1) {
         return weight;
     }
 
@@ -26,7 +26,7 @@ public class Jellybean {
         this.weight = weight;
     }
 
-    public int getPrice() {
+    public int getPrice(int pric1) {
         return price;
     }
 

@@ -28,7 +28,7 @@ public class Candy {
         this.name = name;
     }
 
-    public int getWeight() {
+    public int getWeight(int weight2) {
         return weight;
     }
 
@@ -36,7 +36,7 @@ public class Candy {
         this.weight = weight;
     }
 
-    public int getPrice() {
+    public int getPrice(int pric2) {
         return price;
     }
 
