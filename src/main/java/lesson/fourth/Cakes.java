@@ -48,9 +48,10 @@ double weight=0;
 
     public String description() {
 
-        return "Описание "+name+" весом "+weight +" г. по цене "+price+" р. за шт.";
+        return name+" весом "+weight +" г. по цене "+price+" р. за шт.";
 
     }
+
 
 }
 
