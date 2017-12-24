@@ -35,7 +35,7 @@ public class CakeTests {
     gift.addCake(new Jellybean("мармеладка1",20,weight1));
     gift.addCake(new Candy("мармеладка1",60,weight2));
     gift.addCake(new Jellybean("мармеладка1",60,weight3));
-   Assert.assertEquals("Вес равен сумме сладостей",weight1+weight2+weight3,gift.getTotalWeight(),0);
+   Assert.assertEquals("Вес элементов должен быть равен общей сумме",weight1+weight2+weight3,gift.getTotalWeight(),0);
 }
     @Test
     public  void totalPriceShouldbeSumOfItems(){
@@ -46,7 +46,7 @@ public class CakeTests {
         gift.addCake(new Jellybean("мармеладка1",price1,23));
         gift.addCake(new Candy("конфетка1",price2,22));
         gift.addCake(new Jellybean("мармеладка2",price3,22));
-        Assert.assertEquals("Вес равен сумме сладостей",price1+price2+price3,gift.getTotalPrice(),0);
+        Assert.assertEquals("Цена элементов должна быть равна общей сумме",price1+price2+price3,gift.getTotalPrice(),0);
     }
     @Test
     public  void NameCandyIsNotJellybeanName(){
@@ -55,5 +55,5 @@ public class CakeTests {
         String name2="Конфетка";
         gift.addCake(new Jellybean(name1,22,23));
         gift.addCake(new Candy(name2,2,22));
-        assertThat(name1, is(not(name2)));
+        assertThat("Jellybean и Candy должны иметь разные названия",name1, is(not(name2)));
     }}

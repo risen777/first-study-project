@@ -6,7 +6,7 @@ import java.util.Scanner;
  * @author Sergey
  * @see #Candy(String, int, int)
  */
-public class Candy {
+public class Candy extends Gift{
     private String name;
     private int weight, price;
 

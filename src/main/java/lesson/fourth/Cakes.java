@@ -1,11 +1,12 @@
 package lesson.fourth;
+
 /**
  * Created by Sergey
  */
 public abstract class Cakes {
-String name;
-double price=0;
-double weight=0;
+    String name;
+    double price = 0;
+    double weight = 0;
 
     public String getName() {
         return name;
@@ -33,22 +34,23 @@ double weight=0;
         this.price = price;
         this.weight = weight;
     }
-        public void setPrice(double price) throws Exception {
 
-            if (price < 0) {
+    public void setPrice(double price) throws Exception {
 
-                throw new Exception("Цена не может быть отрицательной");
+        if (price < 0) {
 
-            }
+            throw new Exception("Цена не может быть отрицательной");
 
-            this.price = price;
+        }
+
+        this.price = price;
 
 
     }
 
     public String description() {
 
-        return name+" весом "+weight +" г. по цене "+price+" р. за шт.";
+        return name + " весом " + weight + " г. по цене " + price + " р. за шт.";
 
     }
 

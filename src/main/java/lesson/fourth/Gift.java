@@ -1,8 +1,6 @@
 package lesson.fourth;
 
-import lesson.fifth.Cake;
-
-import java.util.*;
+import java.util.ArrayList;
 
 /**
  * Created by Sergey
@@ -13,7 +11,8 @@ public class Gift {
     private double totalWeight = 0;
 
     private double totalPrice = 0;
-    private AbstractList alist;
+
+
 
 
     public void addCake(Cakes cakes) {
@@ -53,33 +52,56 @@ public class Gift {
 
     }
 
+    public void goods() {
+        ArrayList states = new ArrayList<>();
+        // добавим в список ряд элементов
+        states.add("Dove");
+        states.add("Mamba");
+        states.add("Удалить");
 
-    public void DeleteItem(int itemdel) {
-        int oldItem=mCakes.length;
-        Cakes[] newCakes = new Cakes[oldItem-1];
+        System.out.println(states);
+    }
+
+    void deleteСake(int itemDel) {
+            int oldItemSize = mCakes.length;
+
+            //создаем массив с размерностью на один больше чем старый
+
+            Cakes[] newCakes = new Cakes[oldItemSize - 1];
+
+            //копируем значения из старого массива, когда дошли до удаляемого элемента - выходим из цикла
+
+            for (int i = 0; i < itemDel; i++) {
+
+                newCakes[i] = mCakes[i];
+
+            }
+
+            //копируем значения из старого массива, пропускаем удаляемый элемент, не забывая про смещение
+
+            for (int i = itemDel; i < oldItemSize - 1; i++) {
+
+                newCakes[i] = mCakes[i + 1];
+
+            }
+
+            //обновляем веса и цену
+
+            totalWeight -= mCakes[itemDel].weight;
+
+            totalPrice -= mCakes[itemDel].price;
+
+            //обновляем ссылку, и связываем с ней новый массив
+
+            mCakes = newCakes;
+
+            printItems();
 
 
-
-        for (int i = 0; i < itemdel; i++) {
-
-            newCakes[i] = mCakes[i];
         }
-        for (int i = itemdel; i < oldItem; i++) {
 
 
-            newCakes[i] = mCakes[i+1];
-    }
-
-
-
-        totalWeight -= mCakes[itemdel].weight;
-
-        totalPrice -= mCakes[itemdel].price;
-        mCakes = newCakes;
-    }
-
-
-        public double getTotalWeight() {
+    public double getTotalWeight() {
 
         return totalWeight;
 
@@ -99,4 +121,14 @@ public class Gift {
 
 
     }
+
+    public static Gift generateGift() {
+
+        return new Gift();
+
+//       return null;
+
+    }
+
+
 }
