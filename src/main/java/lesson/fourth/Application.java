@@ -49,8 +49,8 @@ public class Application {
 
                 }
                 System.out.println("**************");
-
-
+gift.printValue();
+            System.out.println("**************");
             }
 
 
