@@ -14,7 +14,6 @@ public class Gift {
 
 
 
-
     public void addCake(Cakes cakes) {
 
         int oldItem = mCakes.length;
@@ -44,12 +43,11 @@ public class Gift {
     public void printItems() {
 
         for (int i = 0; i < mCakes.length; i++) {
+String printString=mCakes[i].description();
 
-            System.out.println(mCakes[i].description());
+            System.out.println(printString);
             //System.out.println("Общий вес подарка: "+getTotalWeight() +" Общая цена подарка: "+getTotalPrice());
         }
-
-
     }
 
     public void goods() {
@@ -57,7 +55,9 @@ public class Gift {
         // добавим в список ряд элементов
         states.add("Dove");
         states.add("Mamba");
+        states.add("Записать");
         states.add("Удалить");
+
 
         System.out.println(states);
     }

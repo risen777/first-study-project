@@ -1,6 +1,10 @@
 package lesson.fourth;
 
-
+import java.awt.print.Book;
+import java.io.BufferedReader;
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.IOException;
 import java.util.Scanner;
 
 /**
@@ -9,17 +13,19 @@ import java.util.Scanner;
 
 public class Application {
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException {
 
         Gift gift = new Gift();
 
-
+        Write write=new Write();
         for (int i = 0; i < 10; i++) {
 
             System.out.println("Введите какой товар добавить или можете удалить");
             gift.goods();
 
             Scanner scanner = new Scanner(System.in);
+
+
 
             String nameCake = scanner.nextLine();
 
@@ -37,26 +43,33 @@ public class Application {
 
 
                 gift.printItems();
+            }
+            else if (nameCake.equals("Записать")) {
+                write.Write();
 
-            } else if (nameCake.equals("Удалить") && i>0 ) {
-                    System.out.println("Введите номер удаляемого");
-                    Scanner scan = new Scanner(System.in);
-
-                    int itemDel = scan.nextInt();
-
-                    gift.deleteСake(itemDel);
-
-
-                }
-                System.out.println("**************");
-gift.printValue();
-            System.out.println("**************");
             }
 
 
+
+            else if (nameCake.equals("Удалить") && i>0 ) {
+                System.out.println("Введите номер удаляемого");
+                Scanner scan = new Scanner(System.in);
+
+                int itemDel = scan.nextInt();
+
+                gift.deleteСake(itemDel);
+
+
+            }
+
+
+            System.out.println("**************");
+            gift.printValue();
+            System.out.println("**************");
         }
+
 
     }
 
-
+}
 
